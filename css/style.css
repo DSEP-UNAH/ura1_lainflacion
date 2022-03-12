@@ -1,8 +1,4 @@
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
 body {
   background: #fff;
   color: #666666;
@@ -22,7 +18,7 @@ a:hover, a:active, a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg.png) top center;
+  background: url(../img/hero-bg.png) top center;
   background-size: cover;
 }
 
@@ -325,10 +321,6 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #C40014;
-}
-
 .nav-menu ul {
   margin: 4px 0 0 15px;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
@@ -502,7 +494,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-repeat:no-repeat;
   background-position-x: 0px;
   text-align:justify;
-  font-size: 16px;
 }
 @media (min-width: 1631px){
 		#intro {
@@ -570,7 +561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services_bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -619,10 +610,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sección de Contenidos
 --------------------------------*/
 .contenido {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.95) 5%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
-  font-size: 16px;
 
 }
 .contenido p{
@@ -656,7 +646,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contenido .contenido-title {
-  margin-left: -80px;
+  margin-left: 0px;
   text-align: left;
   font-weight: 700;
   margin-bottom: 15px;
@@ -671,7 +661,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	height: 40px;
 	margin-top: -15px;
 	border-radius: 0px 0px 5px 5px;
-	margin-left: -80px;
+	margin-left: 0px;
 	color: white;
 	text-align: center;
 	font-size: 1.8em;
@@ -685,17 +675,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 	  margin-left: 0px;
   }
 }
-@media (max-width: 1200px) {
-  .contenido .contenido-title {
-	  margin-left: -80px;
-  }
-  .contenido .banderilla-title{
-	  margin-left: -80px;
-  }
-}
 @media (max-width: 1130px) {
   .contenido .contenido-title {
-	  margin-left: 0px;
+	  margin-left: px;
   }
   .contenido .banderilla-title{
 	  margin-left: 0px;
@@ -757,7 +739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: rgb(243, 240, 240);
+  background: #fff;
   padding: 80px 0;
 }
 
@@ -872,10 +854,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Créditos Section
 --------------------------------*/
 #creditos {
-  background: url('img/fondo_4.png')
+  background: #f6f6f6;
   padding: 80px 0;
-  font-size: 17px;
-
 }
 
 #creditos .profile {
@@ -895,7 +875,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 100%;
 }
 
-#creditos .profile h4 {
+#creditos .profile h4, #creditos .profile h5, #creditos .profile h6 {
   font-weight: 700;
   color: #03C4EB;
   margin-bottom: 5px;
@@ -927,7 +907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #creditos .creditos-title {
-  margin-left: -80px;
+  margin-left: 0px;
   text-align: left;
   font-weight: 700;
   margin-bottom: 15px;
@@ -938,12 +918,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 1320px) {
   #creditos .creditos-title {
 	  margin-left: 0px;
-  }
-
-}
-@media (max-width: 1200px) {
-  #creditos .creditos-title {
-	  margin-left: -80px;
   }
 
 }
@@ -1107,4 +1081,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+.wow.fadeInUp{
+  background-color:rgba(255, 255, 255, 0.65); border-radius: 20px; border: 1px solid black;
 }
